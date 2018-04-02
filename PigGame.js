@@ -20,7 +20,7 @@ document.querySelector('.btn-roll').addEventListener('click', function ()
     var dice = Math.floor( Math.random() * 6 + 1);
     var diceDOM = document.querySelector('.dice');
     diceDOM.style.display = 'block';
-    diceDOM.src ="\ 4-DOM-Pig-Game\\dice-" + dice + '.png'; 
+    diceDOM.src ="\Pig-Game-Dice-Images\\dice-" + dice + '.png'; 
     
     
     if ( dice!== 1 )
