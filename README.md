@@ -1,2 +1,3 @@
-# Budget-application
-Budget application from javascript course
+# Pig Game
+
+Pig Game from the Javascript course
