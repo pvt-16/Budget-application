@@ -3,7 +3,7 @@ var winningScore = 100;
 
 init();
 
-$(document).ready(prompt);
+$(document).ready(setwinningscoreprompt);
 
  // Call function
  document.querySelector('.btn-new').addEventListener('click', function () {
@@ -12,7 +12,7 @@ $(document).ready(prompt);
      init();
      document.querySelector('.btn-hold').style.display='block';
      document.querySelector('.btn-roll').style.display='block';
-     prompt();
+     setwinningscoreprompt();
  });
 
 document.querySelector('.btn-roll').addEventListener('click', function ()
@@ -66,7 +66,7 @@ document.querySelector('.player-0-panel').classList.add('active');
 document.querySelector('.player-1-panel').classList.remove('active');            
 }
 
-function prompt()
+function setwinningscoreprompt()
 {
     if (confirm("Do you want to set a winning score?") )
         winningScore = prompt("Enter new winning Score");
