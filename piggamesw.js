@@ -27,11 +27,10 @@ self.activate('activate', function(event) {
 event.waitUntil( 
   caches.keys().then( function(cacheNames) {
     return Promise.all( cacheNames.filter(function(cache) {
-      if(cache.startsWith('piggy') && cache!= staticCacheName ) {
-        return caches.delete(cache);
-      }
-    })
+      return cache.startsWith('piggy') && cache!= staticCacheName }).map(function(cacheName) {
+          return caches.delete(cacheName);
+        })
     );
-  });
- )
+  })
+ );
 });
