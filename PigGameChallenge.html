@@ -14,7 +14,7 @@
     <script>
      // register ServiceWorker, remember to use absolute path!
      if (navigator.serviceWorker) {
-     navigator.serviceWorker.register('/pvt-16.github.io/Pig-Game/piggamesw.js').then( function() {
+     navigator.serviceWorker.register('piggamesw.js').then( function() {
           console.log("Reg. sw for Piggy"); }).catch( function(err) {
           console.log("Error : ", err);
      });
