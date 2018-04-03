@@ -10,6 +10,14 @@
     <meta name="theme-color" content="#ed2121" />
     <!--<meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://cdn.rawgit.com/GoogleChrome/pwacompat/v1.0.3/pwacompat.min.js"></script>-->
+     
+    <script>
+     // register ServiceWorker, remember to use absolute path!
+     if (navigator.serviceWorker) {
+     navigator.serviceWorker.register('/pvt-16.github.io/Pig-Game/sw.js', {scope: '/pvt-16.github.io/Pig-Game/'})
+          console.log("Reg. sw for Piggy");
+     }
+  </script>
     <title> Pig Game</title>
 </head>
 <body>
