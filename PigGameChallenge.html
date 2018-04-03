@@ -14,8 +14,10 @@
     <script>
      // register ServiceWorker, remember to use absolute path!
      if (navigator.serviceWorker) {
-     navigator.serviceWorker.register('/pvt-16.github.io/Pig-Game/piggamesw.js', {scope: '/pvt-16.github.io/Pig-Game/'})
-          console.log("Reg. sw for Piggy");
+     navigator.serviceWorker.register('/pvt-16.github.io/Pig-Game/piggamesw.js').then( function() {
+          console.log("Reg. sw for Piggy"); }).catch( function(err) {
+          console.log("Error : ", err);
+     });
      }
   </script>
     <title> Pig Game</title>
@@ -51,7 +53,7 @@
             <button class="btn-roll"><i class="ion-ios-loop"></i>Roll dice</button>
             <button class="btn-hold"><i class="ion-ios-download-outline"></i>Hold</button>
             
-            <img src="../Pig-Game-Dice-Images/dice-5.png" alt="Dice" class="dice">
+            <img src="../Pig-Game/Pig-Game-Dice-Images/dice-5.png" alt="Dice" class="dice">
         </div>
     </div>                
     </div>
