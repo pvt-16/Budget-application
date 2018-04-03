@@ -4,11 +4,10 @@ self.addEventListener('install', function(event) {
   event.waitUntil(
     caches.open(staticCacheName).then(function(cache) {
       return cache.addAll([
-        '/Pig-Game/jquery-3.2.1.js',
-        '/Pig-Game/PigGame.js',
-        '/Pig-Game/PigGameCss.css',
-        '/Pig-Game/back.png',
-        '/Pig-Game/Pig-Game-Dice-Images/dice-5.png'
+        'PigGame.js',
+        'PigGameCss.css',
+        'back.png',
+        'Pig-Game-Dice-Images/dice-5.png'
       ]);
     })
   );
