@@ -6,7 +6,7 @@ self.addEventListener('install', function(event) {
        cache.add('PigGame.js')
                           cache.add('PigGameCss.css')
                           cache.add('back.jpg')
-                          cache.add('../Pig-Game-Dice-Images/dice-5.png') 
+                          cache.add('./Pig-Game-Dice-Images/dice-5.png') 
       return;
     })
   );
