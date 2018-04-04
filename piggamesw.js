@@ -3,10 +3,10 @@ var staticCacheName = 'piggy-v3';
 self.addEventListener('install', function(event) {
   event.waitUntil(
     caches.open(staticCacheName).then(function(cache) {
-      return function() { cache.add('PigGame.js');
-                          cache.add('PigGameCss.css');
-                          cache.add('back.jpg');
-                          cache.add('../Pig-Game-Dice-Images/dice-5.png'); }
+      return function() { cache.add('PigGame.js')
+                          cache.add('PigGameCss.css')
+                          cache.add('back.jpg')
+                          cache.add('../Pig-Game-Dice-Images/dice-5.png') }
     })
   );
 });
