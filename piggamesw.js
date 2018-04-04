@@ -1,4 +1,4 @@
-var staticCacheName = 'piggy-v1';
+var staticCacheName = 'piggy-v2';
 
 self.addEventListener('install', function(event) {
   event.waitUntil(
